@@ -57,5 +57,16 @@ namespace Tekstil_Otamasyon
                 frmFirmalar.Show();
             }
         }
+
+        FrmPersonel frmPersonel;
+        private void btnPersoneller_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (frmPersonel == null)
+            {
+                frmPersonel = new FrmPersonel();
+                frmPersonel.MdiParent = this;
+                frmPersonel.Show();
+            }
+        }
     }
 }

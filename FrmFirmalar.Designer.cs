@@ -161,6 +161,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbIl.Size = new System.Drawing.Size(254, 28);
             this.cmbIl.TabIndex = 28;
+            this.cmbIl.SelectedIndexChanged += new System.EventHandler(this.cmbIl_SelectedIndexChanged);
             // 
             // txtVergiDaire
             // 
@@ -254,6 +255,9 @@
             // 
             this.gridView1.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Tahoma", 11F);
             this.gridView1.Appearance.ColumnFilterButton.Options.UseFont = true;
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.LightYellow;
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
@@ -502,6 +506,7 @@
             this.btnTemizle.Size = new System.Drawing.Size(211, 60);
             this.btnTemizle.TabIndex = 33;
             this.btnTemizle.Text = "Temizle";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // btnGuncelle
             // 
@@ -513,6 +518,7 @@
             this.btnGuncelle.Size = new System.Drawing.Size(211, 60);
             this.btnGuncelle.TabIndex = 32;
             this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -524,6 +530,7 @@
             this.btnSil.Size = new System.Drawing.Size(211, 60);
             this.btnSil.TabIndex = 31;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnKaydet
             // 
@@ -535,6 +542,7 @@
             this.btnKaydet.Size = new System.Drawing.Size(211, 60);
             this.btnKaydet.TabIndex = 30;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // xtraTabPage3
             // 
@@ -575,6 +583,7 @@
             // rchKod1
             // 
             this.rchKod1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchKod1.Font = new System.Drawing.Font("Tahoma", 12F);
             this.rchKod1.Location = new System.Drawing.Point(0, 0);
             this.rchKod1.Name = "rchKod1";
             this.rchKod1.Size = new System.Drawing.Size(473, 669);
@@ -591,6 +600,7 @@
             // rchKod2
             // 
             this.rchKod2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchKod2.Font = new System.Drawing.Font("Tahoma", 12F);
             this.rchKod2.Location = new System.Drawing.Point(0, 0);
             this.rchKod2.Name = "rchKod2";
             this.rchKod2.Size = new System.Drawing.Size(473, 669);
@@ -607,6 +617,7 @@
             // rchKod3
             // 
             this.rchKod3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchKod3.Font = new System.Drawing.Font("Tahoma", 12F);
             this.rchKod3.Location = new System.Drawing.Point(0, 0);
             this.rchKod3.Name = "rchKod3";
             this.rchKod3.Size = new System.Drawing.Size(473, 669);
@@ -695,7 +706,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmFirmalar";
-            this.Text = "FrmFirmalar";
+            this.Text = "Firmalar";
             this.Load += new System.EventHandler(this.FrmFirmalar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cmbIlce.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbIl.Properties)).EndInit();

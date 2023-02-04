@@ -373,6 +373,9 @@
             // 
             this.gridView1.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Tahoma", 11F);
             this.gridView1.Appearance.ColumnFilterButton.Options.UseFont = true;
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.LightYellow;
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
@@ -397,7 +400,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmMusteriler";
-            this.Text = "FrmMusteriler";
+            this.Text = "Müşteriler";
             this.Load += new System.EventHandler(this.FrmMusteriler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoyad.Properties)).EndInit();

@@ -170,6 +170,7 @@
             this.btnPersoneller.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 13F);
             this.btnPersoneller.ItemAppearance.Normal.Options.UseFont = true;
             this.btnPersoneller.Name = "btnPersoneller";
+            this.btnPersoneller.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPersoneller_ItemClick);
             // 
             // btnBankalar
             // 
